@@ -6,9 +6,11 @@ from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///" + \
-    os.path.join(basedir, 'app.sqlite')
+# basedir = os.path.abspath(os.path.dirname(__file__))
+# app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///" + \
+#     os.path.join(basedir, 'app.sqlite')
+
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://xwyqfzmigaiayr:a543f831ad53a7d69b3bd6d41fe5aa1e832b918d6b86c16ada7537c0da712ed2@ec2-52-0-79-72.compute-1.amazonaws.com:5432/d5bvddu8cnhs14"
 
 db = SQLAlchemy(app)
 ma = Marshmallow(app)

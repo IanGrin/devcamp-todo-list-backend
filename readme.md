@@ -24,4 +24,4 @@ http://127.0.0.1:5000/todo/<id> - DELETE
 
 ### Heroku Database_url
 
-postgres://xfbgoobatvybmy:61c896f2979511f0211ac9b19346627f4120272cfe5fa61781c86b1298aaf3e4@ec2-34-202-127-5.compute-1.amazonaws.com:5432/da84p4rs433fi5
+postgres://xwyqfzmigaiayr:a543f831ad53a7d69b3bd6d41fe5aa1e832b918d6b86c16ada7537c0da712ed2@ec2-52-0-79-72.compute-1.amazonaws.com:5432/d5bvddu8cnhs14
