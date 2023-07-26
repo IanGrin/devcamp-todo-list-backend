@@ -22,6 +22,6 @@ http://127.0.0.1:5000/todo/<id> - PUT
 
 http://127.0.0.1:5000/todo/<id> - DELETE
 
-### Heroku Database_url
+### Heroku DATABASE_URI
 
-postgres://xwyqfzmigaiayr:a543f831ad53a7d69b3bd6d41fe5aa1e832b918d6b86c16ada7537c0da712ed2@ec2-52-0-79-72.compute-1.amazonaws.com:5432/d5bvddu8cnhs14
+postgres://fnzergzxycybba:465d500d8cc9b1afae5932d306add414d2a3e225cb3ee905373f1c4fdac377c5@ec2-44-206-204-65.compute-1.amazonaws.com:5432/d48v7f91vkks0g
