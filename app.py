@@ -35,6 +35,9 @@ class TodoSchema(ma.Schema):
 todo_schema = TodoSchema()
 todos_schema = TodoSchema(many=True)
 
+with app.app_context():
+    db.create_all()
+
 
 @app.route('/todos', methods=['GET'])
 def get_todos():
