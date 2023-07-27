@@ -41,7 +41,7 @@ def create_app():
     with app.app_context():
         init_db()
 
-    return appe
+    return app
 
 @app.route('/todos', methods=['GET'])
 def get_todos():
