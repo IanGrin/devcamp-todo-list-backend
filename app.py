@@ -13,6 +13,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://fnzergzxycybba:465d500d8cc9b1afae5932d306add414d2a3e225cb3ee905373f1c4fdac377c5@ec2-44-206-204-65.compute-1.amazonaws.com:5432/d48v7f91vkks0g"
 
 db = SQLAlchemy(app)
+app.app_context().push()
+
 ma = Marshmallow(app)
 CORS(app)
 
@@ -35,10 +37,7 @@ class TodoSchema(ma.Schema):
 todo_schema = TodoSchema()
 todos_schema = TodoSchema(many=True)
 
-@app.route('/create')
-def create():
-    db.create_all()
-    return 'All tables created'
+
 
 @app.route('/todos', methods=['GET'])
 def get_todos():
