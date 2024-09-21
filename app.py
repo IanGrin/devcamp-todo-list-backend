@@ -11,7 +11,8 @@ app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///" + \
 #     os.path.join(basedir, 'app.sqlite')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://fnzergzxycybba:465d500d8cc9b1afae5932d306add414d2a3e225cb3ee905373f1c4fdac377c5@ec2-44-206-204-65.compute-1.amazonaws.com:5432/d48v7f91vkks0g"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://u60qku1fklqdj9:p72f4b689c2e8807f5555e6f8b37a794aa29e487a7c81ae3672098b49dc47506c@c5p86clmevrg5s.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d9mh19r4fhtrpt"
+# old config: postgresql://fnzergzxycybba:465d500d8cc9b1afae5932d306add414d2a3e225cb3ee905373f1c4fdac377c5@ec2-44-206-204-65.compute-1.amazonaws.com:5432/d48v7f91vkks0g
 
 db = SQLAlchemy(app)
 app.app_context().push()
